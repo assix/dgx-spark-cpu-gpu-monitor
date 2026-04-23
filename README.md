@@ -2,6 +2,8 @@
 
 A lightweight GNOME status bar widget for the NVIDIA DGX Spark. It displays real-time CPU and GPU utilization with status indicators (🟢 <=50%, 🟡 >50%, 🔴 >80%) and provides a dropdown menu showing the top 5 CPU and GPU consuming processes.
 
+![Spark Monitor Screenshot](screenshot.png)
+
 ## Prerequisites
 
 Install the required system dependencies:
