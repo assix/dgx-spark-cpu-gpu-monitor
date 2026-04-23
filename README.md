@@ -18,7 +18,7 @@ sudo apt install -y python3-gi gir1.2-ayatanaappindicator3-0.1 python3-psutil
 Run the script using the system Python interpreter:
 
 ```bash
-/usr/bin/python3 spark_monitor_gemini.py
+/usr/bin/python3 monitor.py
 ```
 
 ## Run at Boot (GNOME Autostart)
@@ -39,7 +39,7 @@ To have the widget start automatically when you log in to your GNOME desktop:
    ```ini
    [Desktop Entry]
    Type=Application
-   Exec=/usr/bin/python3 /home/assix/DevOps/Widget-GPU/spark_monitor_gemini.py
+   Exec=/usr/bin/python3 monitor.py
    Hidden=false
    NoDisplay=false
    X-GNOME-Autostart-enabled=true
