@@ -1,6 +1,6 @@
-# DGX Spark CPU & GPU Monitor
+# DGX Spark CPU & GPU & Memory Monitor
 
-A lightweight GNOME status bar widget for the NVIDIA DGX Spark. It displays real-time CPU and GPU utilization with status indicators (🟢 <=50%, 🟡 >50%, 🔴 >80%) and provides a dropdown menu showing the top 5 CPU and GPU consuming processes.
+A lightweight GNOME status bar widget for the NVIDIA DGX Spark. It displays real-time CPU, GPU and Memory utilization with status indicators (🟢 <=50%, 🟡 >50%, 🔴 >80%) and provides a dropdown menu showing the top 5 CPU and GPU consuming processes.
 
 ![Spark Monitor Screenshot](screenshot.png)
 
