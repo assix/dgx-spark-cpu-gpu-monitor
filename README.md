@@ -18,7 +18,7 @@ sudo apt install -y python3-gi gir1.2-ayatanaappindicator3-0.1 python3-psutil
 Run the script using the system Python interpreter:
 
 ```bash
-/usr/bin/python3 monitor.py
+/usr/bin/python3 dgx_monitor.py
 ```
 
 ## Run at Boot (GNOME Autostart)
@@ -39,13 +39,13 @@ To have the widget start automatically when you log in to your GNOME desktop:
    ```ini
    [Desktop Entry]
    Type=Application
-   Exec=/usr/bin/python3 monitor.py
+   Exec=/usr/bin/python3 dgx_monitor.py
    Hidden=false
    NoDisplay=false
    X-GNOME-Autostart-enabled=true
    Name[en_US]=Spark Monitor
    Name=Spark Monitor
-   Comment=Start CPU/GPU Monitor Widget
+   Comment=Start CPU/GPU/RAM Monitor Widget
    ```
 
 4. Save the file. The widget will now launch automatically on your next login.
