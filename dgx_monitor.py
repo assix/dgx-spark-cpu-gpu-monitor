@@ -145,8 +145,12 @@ class SparkMonitor:
             gpu_dot = self.get_status_dot(gpu)
             mem_dot = self.get_status_dot(mem)
             
-            # {:3d} strictly formats the number to be 3 characters wide (e.g. "  5", " 50", "100")
-            label = f"{cpu_dot} CPU: {int(cpu):3d}% | {gpu_dot} GPU: {gpu:3d}% | {mem_dot} MEM: {int(mem):3d}%"
+            # Use Unicode Figure Space (\u2007) which is exactly the width of a numerical digit in most fonts
+            cpu_str = f"{int(cpu):3d}".replace(" ", "\u2007")
+            gpu_str = f"{int(gpu):3d}".replace(" ", "\u2007")
+            mem_str = f"{int(mem):3d}".replace(" ", "\u2007")
+            
+            label = f"{cpu_dot} CPU: {cpu_str}% | {gpu_dot} GPU: {gpu_str}% | {mem_dot} MEM: {mem_str}%"
             
             GLib.idle_add(self.update_menu_ui, top_cpu, top_gpu, top_mem, label)
 
